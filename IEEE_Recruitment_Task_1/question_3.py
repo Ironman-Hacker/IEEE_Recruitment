@@ -1,0 +1,10 @@
+import numpy as np
+matrix = np.random.randint(1, 101, size=(5, 5))
+print(matrix)
+print(np.max(matrix))
+print(np.min(matrix))
+print(np.mean(matrix))
+normalized = (matrix - np.min(matrix)) / (np.max(matrix) - np.min(matrix))
+print(normalized)
+flattened_sorted = np.sort(matrix.flatten())
+print(flattened_sorted)
